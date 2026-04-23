@@ -1,0 +1,3 @@
+-[] background to red
+-[] change font to arial
+-[] add percentage functionality
