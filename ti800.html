@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TI-800 Scientific Calculator</title>
+  <link rel="stylesheet" href="ti800.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="brand">TI-800</div>
+    <div class="screen">
+      <div class="secondary-display" id="secondaryDisplay"></div>
+      <div class="main-display" id="mainDisplay">0</div>
+    </div>
+    <div class="keyboard">
+      <div class="function-row">
+        <button class="function yellow" onclick="toggle2nd()">2nd</button>
+        <button class="function yellow" onclick="clearDisplay()">C</button>
+        <button class="function yellow" onclick="deleteChar()">DEL</button>
+      </div>
+      <div class="function-row">
+        <button class="function yellow" onclick="scientific('sin')">sin</button>
+        <button class="function yellow" onclick="scientific('cos')">cos</button>
+        <button class="function yellow" onclick="scientific('tan')">tan</button>
+        <button class="function yellow" onclick="scientific('sqrt')">√</button>
+      </div>
+      <div class="function-row">
+        <button class="function yellow" onclick="scientific('square')">x²</button>
+        <button class="function yellow" onclick="scientific('power')">x^y</button>
+        <button class="function yellow" onclick="scientific('pi')">π</button>
+        <button class="function yellow" onclick="scientific('ee')">EE</button>
+      </div>
+      <div class="function-row">
+        <button class="function yellow" onclick="append('(')">(</button>
+        <button class="function yellow" onclick="append(')')">)</button>
+        <button class="function yellow" onclick="append('%')">%</button>
+        <button class="function yellow" onclick="toggleSign()">±</button>
+      </div>
+      <div class="number-grid">
+        <button class="number" onclick="append('7')">7</button>
+        <button class="number" onclick="append('8')">8</button>
+        <button class="number" onclick="append('9')">9</button>
+        <button class="operator" onclick="append('/')">÷</button>
+        <button class="number" onclick="append('4')">4</button>
+        <button class="number" onclick="append('5')">5</button>
+        <button class="number" onclick="append('6')">6</button>
+        <button class="operator" onclick="append('*')">×</button>
+        <button class="number" onclick="append('1')">1</button>
+        <button class="number" onclick="append('2')">2</button>
+        <button class="number" onclick="append('3')">3</button>
+        <button class="operator" onclick="append('-')">-</button>
+        <button class="number zero-btn" onclick="append('0')">0</button>
+        <button class="number" onclick="append('.')">.</button>
+        <button class="operator" onclick="append('+')">+</button>
+      </div>
+      <div class="action-row">
+        <button class="equals" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="ti800.js"></script>
+</body>
+</html>

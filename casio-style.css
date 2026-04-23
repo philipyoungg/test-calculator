@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #d4c4a8 0%, #b8a888 50%, #a89070 100%);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.casio-calculator {
+  background: linear-gradient(180deg, #e8dcc8 0%, #d4c4a8 50%, #c8b898 100%);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  width: 220px;
+  border: 2px solid #a89070;
+}
+
+.brand {
+  font-family: 'Stencil', 'Arial Black', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4035;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.display {
+  background: #8a9a7a;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.3);
+  position: relative;
+  border: 1px solid #6a7a5a;
+}
+
+.display-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2a3525;
+  text-align: right;
+  min-height: 36px;
+  word-wrap: break-word;
+  background: transparent;
+}
+
+.memory-indicator {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight: bold;
+  color: #2a3525;
+  opacity: 0;
+}
+
+.memory-indicator.active {
+  opacity: 1;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+button {
+  padding: 12px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.05s, box-shadow 0.05s;
+  box-shadow: 
+    0 2px 0 rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 
+    0 1px 0 rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.number {
+  background: linear-gradient(180deg, #f5f5f5 0%, #e0e0e0 100%);
+  color: #333;
+}
+
+.number:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+}
+
+.number.zero {
+  grid-column: span 2;
+}
+
+.operator {
+  background: linear-gradient(180deg, #8a7a6a 0%, #6a5a4a 100%);
+  color: #fff;
+}
+
+.operator:hover {
+  background: linear-gradient(180deg, #9a8a7a 0%, #7a6a5a 100%);
+}
+
+.equals {
+  background: linear-gradient(180deg, #c8a878 0%, #a88858 100%);
+  color: #333;
+  grid-column: span 1;
+}
+
+.equals:hover {
+  background: linear-gradient(180deg, #d8b888 0%, #b89868 100%);
+}
+
+.clear {
+  background: linear-gradient(180deg, #c8a878 0%, #a88858 100%);
+  color: #333;
+}
+
+.clear:hover {
+  background: linear-gradient(180deg, #d8b888 0%, #b89868 100%);
+}
+
+.mem-btn {
+  background: linear-gradient(180deg, #7a8a9a 0%, #5a6a7a 100%);
+  color: #fff;
+  font-size: 12px;
+}
+
+.mem-btn:hover {
+  background: linear-gradient(180deg, #8a9aaa 0%, #6a7a8a 100%);
+}
+
+.mem-btn.active {
+  background: linear-gradient(180deg, #4a5a6a 0%, #3a4a5a 100%);
+}

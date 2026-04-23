@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casio Basic Calculator</title>
+  <link rel="stylesheet" href="casio-style.css">
+</head>
+<body>
+  <div class="casio-calculator">
+    <div class="brand">CASIO</div>
+    <div class="display" id="display">
+      <div class="display-text" id="displayText">0</div>
+      <div class="memory-indicator" id="memoryIndicator"></div>
+    </div>
+    <div class="buttons">
+      <button class="mem-btn" onclick="memoryClear()">MC</button>
+      <button class="mem-btn" onclick="memoryRecall()">MR</button>
+      <button class="mem-btn" onclick="memoryPlus()">M+</button>
+      <button class="mem-btn" onclick="memoryMinus()">M-</button>
+      <button class="clear" onclick="allClear()">AC</button>
+      <button class="clear" onclick="clearEntry()">C</button>
+      <button class="operator" onclick="append('%')">%</button>
+      <button class="number" onclick="append('7')">7</button>
+      <button class="number" onclick="append('8')">8</button>
+      <button class="number" onclick="append('9')">9</button>
+      <button class="operator" onclick="append('*')">×</button>
+      <button class="number" onclick="append('4')">4</button>
+      <button class="number" onclick="append('5')">5</button>
+      <button class="number" onclick="append('6')">6</button>
+      <button class="operator" onclick="append('-')">-</button>
+      <button class="number" onclick="append('1')">1</button>
+      <button class="number" onclick="append('2')">2</button>
+      <button class="number" onclick="append('3')">3</button>
+      <button class="operator" onclick="append('+')">+</button>
+      <button class="number zero" onclick="append('0')">0</button>
+      <button class="number" onclick="append('.')">.</button>
+      <button class="equals" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="casio.js"></script>
+</body>
+</html>
