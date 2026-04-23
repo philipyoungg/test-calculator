@@ -1,0 +1,3 @@
+- [x] background to red (done: Thu Apr 23 2026)
+- [x] change font to arial (done: Thu Apr 23 2026)
+- [x] add percentage functionality (done: Thu Apr 23 2026)
