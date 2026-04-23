@@ -87,3 +87,31 @@ button:active {
 .clear:hover {
   background: #ff6b6b;
 }
+
+.dark-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+ body.dark {
+  background: #000;
+}
+
+.calculator.dark {
+  background: #333;
+}
+
+.calculator.dark .display {
+  background: #222;
+}
+
+.calculator.dark .number {
+  background: #444;
+}
+
+.calculator.dark .number:hover {
+  background: #555;
+}
